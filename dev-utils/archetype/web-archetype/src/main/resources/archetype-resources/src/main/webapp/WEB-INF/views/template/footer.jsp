@@ -43,7 +43,8 @@
 
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <footer class="main">
-    Powered by <a href="http://egovernments.org/" target="_blank">eGovernments Foundation</a>
+     Brought to you by <a href="http://egovtech.org/" target="_blank">ITM Pamodzi</a>
+
 </footer>
 <script type="text/javascript" src="<c:url value='/resources/global/js/bootstrap/typeahead.bundle.js' context='/egi'/>"></script>
 <script src="<c:url value='/resources/global/js/jquery/plugins/jquery.inputmask.bundle.min.js' context='/egi'/>"></script>

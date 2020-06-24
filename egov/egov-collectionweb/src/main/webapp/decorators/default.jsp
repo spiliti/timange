@@ -149,7 +149,8 @@
 		    
 		    <!-- footer -->
 		    <footer class="main">
-			    Powered by <a href="http://egovernments.org/" target="_blank">eGovernments Foundation</a>
+			     Brought to you by <a href="http://egovtech.org/" target="_blank">ITM Pamodzi</a>
+
 			</footer>
 	</div>
 	
