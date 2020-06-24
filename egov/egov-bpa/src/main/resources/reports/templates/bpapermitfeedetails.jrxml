@@ -92,7 +92,7 @@
 					<font fontName="SansSerif" isBold="true"/>
 					<paragraph leftIndent="5"/>
 				</textElement>
-				<text><![CDATA[Amount (Rs)]]></text>
+				<text><![CDATA[Amount (ZK)]]></text>
 			</staticText>
 		</band>
 	</columnHeader>
