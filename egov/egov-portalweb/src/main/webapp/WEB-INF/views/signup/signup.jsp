@@ -56,7 +56,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="description" content="eGov Urban Portal"/>
+    <meta name="description" content="Timange Portal"/>
     <meta name="author" content="eGovernments Foundation"/>
     <spring:eval expression="@environment.getProperty('user.pwd.strength')" var="pwdstrengthmsg"/>
     <spring:message code="usr.pwd.strength.msg.${pwdstrengthmsg}" var="pwdmsg"/>
