@@ -53,7 +53,7 @@
 		<meta name="description" content="Neon Admin Panel" />
 		<meta name="author" content="" />
 		
-		<title>eGov Urban Portal</title>
+		<title>Timange Portal</title>
 		
 		<link rel="icon" href="<c:url value='/resources/global/images/favicon.png" sizes="32x32' context='/egi'/>">
 	    <link rel="stylesheet" href="<c:url value='/resources/global/css/bootstrap/bootstrap.css' context='/egi'/>">

@@ -58,7 +58,7 @@
 	<meta name="description" content="Timange Portal"/>
 	<meta name="author" content=""/>
 
-	<title>eGov Urban Portal</title>
+	<title>Timange Portal</title>
 
 	<link rel="icon" href="<cdn:url  value='/resources/global/images/favicon.png' context='/egi'/>" sizes="32x32">
 	<link rel="stylesheet" href="<cdn:url  value='/resources/global/css/bootstrap/bootstrap.css' context='/egi'/>">

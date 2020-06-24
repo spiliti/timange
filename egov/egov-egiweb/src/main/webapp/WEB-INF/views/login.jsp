@@ -73,7 +73,7 @@
 	content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="description" content="eGov Urban Portal" />
 <meta name="author" content="eGovernments Foundation" />
-<title>eGov Urban Portal Login</title>
+<title>Timange Portal Login</title>
 <link rel="icon"
 	href="<cdn:url value='/resources/global/images/favicon.png'/>"
 	sizes="32x32">
