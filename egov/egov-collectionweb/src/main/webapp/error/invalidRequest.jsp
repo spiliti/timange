@@ -77,7 +77,7 @@
 		</div>
 	</div>
 	<div class="buttonbottom" style="position:absolute;bottom:0px;width:100%;clear:both;left:0px;right:0px">
-		eGov Urban Portal Designed and Implemented by <a href="http://www.egovernments.org/">eGovernments Foundation</a> &copy; All Rights Reserved.
+		Timange Portal Implemented by <a href="http://www.egovtech.org/">ITM Pamodzi</a> &copy; All Rights Reserved.
 	</div>
 </body>
 </html>
