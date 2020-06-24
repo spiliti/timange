@@ -300,10 +300,10 @@ today = dd+'/'+mm+'/'+yyyy;
 					<th class="bluebgheadtd">Sl.No.</th>
 					<th class="bluebgheadtd">Account Number</th>
 					<th class="bluebgheadtd">Account Head</th>
-					<th class="bluebgheadtd">Opening Balance(Rs)</th>
-					<th class="bluebgheadtd">Debit(Rs)</th>
-					<th class="bluebgheadtd">Credit(Rs)</th>
-					<th class="bluebgheadtd">Closing Balnce(Rs)</th>
+					<th class="bluebgheadtd">Opening Balance(ZK)</th>
+					<th class="bluebgheadtd">Debit(ZK)</th>
+					<th class="bluebgheadtd">Credit(ZK)</th>
+					<th class="bluebgheadtd">Closing Balnce(ZK)</th>
 
 				</tr>
 				<s:iterator var="p" value="al" status="s">
@@ -344,9 +344,9 @@ today = dd+'/'+mm+'/'+yyyy;
 					<th class="bluebgheadtd">Account Number</th>
 					<th class="bluebgheadtd">Account Head</th>
 					<s:iterator value="fundList" status="stat">
-						<th class="bluebgheadtd" colspan="1"><s:property value="name" />(Rs)</th>
+						<th class="bluebgheadtd" colspan="1"><s:property value="name" />(ZK)</th>
 					</s:iterator>
-					<th class="bluebgheadtd">Total(Rs)</th>
+					<th class="bluebgheadtd">Total(ZK)</th>
 				</tr>
 
 				<s:iterator var="p" value="al" status="s">
