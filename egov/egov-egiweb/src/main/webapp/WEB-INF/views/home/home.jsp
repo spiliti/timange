@@ -218,7 +218,8 @@
 						
 						<li class="dropdown">
 							<a href="http://www.egovernments.org" target="_blank">
-								<img src="<c:url value='/resources/global/images/digit-logo-black.png' context='/egi'/>" title="Powered by eGovernments" height="35px" style="opacity: 0.8">
+								<img src="<c:url value='/resources/global/images/digit-logo-black.png' context='/egi'/>" title="Customised by ITM Pamodzi"
+ height="35px" style="opacity: 0.8">
 							</a>
 						</li>
 					</ul>

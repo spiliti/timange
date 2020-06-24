@@ -94,7 +94,8 @@
 
                     <li class="ico-menu">
                         <a href="http://www.egovernments.org" data-strwindname="egovsite" class="open-popup">
-                            <img src="<cdn:url value='/resources/global/images/digit-logo-black.png' context="/egi"/>" title="Powered by eGovernments" height="35px" style="opacity: 0.8">
+                            <img src="<cdn:url value='/resources/global/images/digit-logo-black.png' context="/egi"/>" title="Customised by ITM Pamodzi"
+ height="35px" style="opacity: 0.8">
                         </a>
                     </li>
 

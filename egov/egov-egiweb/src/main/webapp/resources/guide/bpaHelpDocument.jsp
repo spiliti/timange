@@ -63,7 +63,8 @@
 				<a href="http://www.egovernments.org" style="padding-top:8px;padding-right:30px;" 
 						data-strwindname="egovsite" class="open-popup"> <img
 							src="<cdn:url value='/resources/global/images/egov_logo_tr_h.png'/>"
-							title="Powered by eGovernments" height="45" alt=""> 
+							title="Customised by ITM Pamodzi"
+ height="45" alt=""> 
 					</a>
 	</div>	
 

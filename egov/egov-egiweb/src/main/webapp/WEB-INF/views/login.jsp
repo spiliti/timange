@@ -107,7 +107,8 @@
 							<a href="http://www.egovernments.org" data-strwindname="egovsite"
 								class="open-popup"> 
 								<img src="<cdn:url value='/resources/global/images/digit-logo-white.png'/>"
-									title="Powered by eGovernments" width = "100" alt="" />
+									title="Customised by ITM Pamodzi"
+ width = "100" alt="" />
 							</a>
 						</div>
 						<c:set var="tenantId" value="<%=tenantId%>" />
