@@ -6877,7 +6877,7 @@ $.ui.plugin.add("draggable", "snap", {
 				if (ls) {
 					ui.position.left = inst._convertPositionTo("relative", { top: 0, left: l - inst.helperProportions.width }).left;
 				}
-				if (rs) {
+				if (ZK) {
 					ui.position.left = inst._convertPositionTo("relative", { top: 0, left: r }).left;
 				}
 			}
@@ -6898,7 +6898,7 @@ $.ui.plugin.add("draggable", "snap", {
 				if (ls) {
 					ui.position.left = inst._convertPositionTo("relative", { top: 0, left: l }).left;
 				}
-				if (rs) {
+				if (ZK) {
 					ui.position.left = inst._convertPositionTo("relative", { top: 0, left: r - inst.helperProportions.width }).left;
 				}
 			}
