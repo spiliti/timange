@@ -326,7 +326,7 @@
 						cellspacing="0" border="0" class="tablebottom" id="paymentTable">
 						<tr>
 							<td colspan="11" align="center"><b>PAYMENT BANK DETAILS</b></td>
-							<td align="right"><strong>(Rupees in Lakh)</strong></td>
+							<td align="right"><strong>(Kwacha(000s))</strong></td>
 						</tr>
 						<tr>
 							<th class="bluebgheadtd"><s:text name="bank" /></th>
