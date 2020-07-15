@@ -327,8 +327,8 @@
 				<div class="constrain">
 					<div id="legal">
 						<c:set var="now" value="<%=new org.joda.time.DateTime()%>" />
-						<span class="copyright">Copyright <span><i class="fa fa-copyright"></i></span> <joda:format value="${now}" pattern="yyyy" /> <a href="http://www.egovernments.org" target="_blank"> eGovernments Foundation.<sup>&reg;</sup></a></span>
-						<span class="version">eGov ERP - ${app_version}_${app_buildno}<c:if test="${not empty app_core_build_no}"> @ Core - ${app_core_build_no}</c:if></span>
+						<span class="copyright">Copyright <span><i class="fa fa-copyright"></i></span> <joda:format value="${now}" pattern="yyyy" /> <a href="http://www.egovernments.org" target="_blank"> ITM Pamodzi Foundation.<sup>&reg;</sup></a></span>
+						<span class="version">ZZZZ ERP - ${app_version}_${app_buildno}<c:if test="${not empty app_core_build_no}"> @ Core - ${app_core_build_no}</c:if></span>
 					</div>
 				</div>
 			</footer>	
