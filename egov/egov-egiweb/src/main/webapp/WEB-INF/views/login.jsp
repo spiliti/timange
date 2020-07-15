@@ -104,7 +104,7 @@
 					<div class = "login-content-wrapper page-common-padding col-md-12">
 						<div class = "new-login-header padding0 col-md-12">
 							<span class="f-medium login-title-1 bold color-white">${sessionScope.citymunicipalityname}</span>
-							<a href="http://www.egovernments.org" data-strwindname="egovsite"
+							<a href="http://www.egovtech.org" data-strwindname="egovsite"
 								class="open-popup"> 
 								<img src="<cdn:url value='/resources/global/images/digit-logo-white.png'/>"
 									title="Customised by ITM Pamodzi"
