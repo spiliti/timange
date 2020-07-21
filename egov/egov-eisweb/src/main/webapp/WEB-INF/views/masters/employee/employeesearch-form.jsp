@@ -137,12 +137,12 @@
 										         </c:forEach>
 											</form:select>
 										</div>
-										<div class="col-sm-4 add-margin">
+<!-- 	Shuller							<div class="col-sm-4 add-margin">
 											<form:input type="text" name="pan" id="pan" cssClass="form-control" path="pan" placeholder="PAN"/>
 										</div>
 										<div class="col-sm-4 add-margin">
 											<form:input type="text" name="aadhaar" id="aadhaar" cssClass="form-control" path="aadhaar" placeholder="Aadhaar"/>
-										</div>
+										</div> -->
 										
 									</div>
 

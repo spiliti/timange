@@ -177,7 +177,7 @@
 							<c:out value="${employee.code}" />
 						</div>
 					</div>
-					<div class="row add-border">
+<!-- 					<div class="row add-border">
 						<div class="col-md-3 col-xs-6 add-margin">
 							<spring:message code="lbl.pan" />
 						</div>
@@ -191,7 +191,7 @@
 						<div class="col-md-3 col-xs-6 add-margin view-content">
 							<c:out value="${employee.aadhaarNumber}" />
 						</div>
-					</div>
+					</div> -->
 
 					<div class="row">
 						<div class="col-md-3 col-xs-6 add-margin">
