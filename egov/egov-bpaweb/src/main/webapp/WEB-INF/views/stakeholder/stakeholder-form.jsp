@@ -348,6 +348,7 @@
 			</div>
 		</div>
 	</div>
+	<!-- Localize Aadhar and PAN --shuller --
 	<div class="form-group">
 		<label class="col-sm-3 control-label text-right"><spring:message
 				code="lbl.aadhar" />  
@@ -367,7 +368,8 @@
 			<span class=""></span>
 			<form:errors path="pan" cssClass="error-msg" />
 		</div>
-	</div>     
+	</div>
+	End of blocalisation -->
 	<c:forEach var="address" items="${stakeHolder.address}"
 		varStatus="status1">
 		<form:hidden path="address[${status1.index}].id" value="${address.id}" />

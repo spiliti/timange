@@ -140,6 +140,8 @@
 		<form:errors path="${address}.postOffice"
 			cssClass="add-margin error-msg" />
 	</div>
+	
+<!--  by shuller	
 	<label class="col-sm-2 control-label"> <spring:message
 			code="lbl.pincode" /><span class="mandatory"></span>
 	</label>
@@ -149,6 +151,6 @@
 			placeholder="" maxlength="6" autocomplete="off" required="required" />
 		<form:errors path="${address}.pinCode"
 			cssClass="add-margin error-msg" />
-	</div>
+	</div> -->
 </div>
 
