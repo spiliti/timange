@@ -98,7 +98,7 @@
 				 			<c:if test="${mode == 'update'}">
                     			<form:hidden path="password" value="${employee.password}"/>
                             </c:if>
-								<form:hidden path="locale" value="en_IN"/>
+								<form:hidden path="locale" value="en_ZM"/>
 								<input type="hidden" value="" id="removedJurisdictionIds" name ="removedJurisdictionIds"/>
 								<input type="hidden" value="${mode}" id="mode"/>
 									<div class="form-group">

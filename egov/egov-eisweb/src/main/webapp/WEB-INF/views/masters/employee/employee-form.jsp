@@ -99,7 +99,7 @@
 				 			<c:if test="${mode == 'update'}">
                     			<form:hidden path="password" value="${employee.password}"/>
                             </c:if>
-								<form:hidden path="locale" value="en_IN"/>
+								<form:hidden path="locale" value="en_ZM"/>
 								<input type="hidden" value="" id="removedJurisdictionIds" name ="removedJurisdictionIds"/>
 								<input type="hidden" value="" id="removedassignIds" name ="removedassignIds"/>
 								<input type="hidden" value="" id="editassignIds" name ="editassignIds"/>
@@ -137,10 +137,10 @@
 											<form:radiobutton path="gender" id="gender" value="FEMALE"/>
 											<label>Female</label>
 										</div>
-										<div class="col-sm-2 col-xs-12 add-margin">
+<!-- 										<div class="col-sm-2 col-xs-12 add-margin">
 											<form:radiobutton path="gender" id="gender" value="OTHERS"/>
 											<label>Transgender</label>
-										</div>
+										</div> -->
 									</div>
 
 									<div class="form-group">
@@ -222,7 +222,7 @@
 										</div>
 										
 									</div>
-
+<!-- 
 									<div class="form-group">
 									
 										<label for="field-1" class="col-sm-3 control-label"><spring:message code="lbl.aadhar"/></label>
@@ -238,9 +238,8 @@
 											<form:input path="pan" id="pan" type="text" cssClass="form-control is_valid_alphanumeric" maxlength="10"/>
 											<form:errors path="pan" cssClass="add-margin error-msg"/>
 										</div>
-										
-										
-									</div>
+																		
+									</div> -->
 									
 								    <c:if test="${not empty image}">
 								    <div class="form-group">

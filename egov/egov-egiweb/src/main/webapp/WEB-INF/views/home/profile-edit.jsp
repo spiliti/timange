@@ -146,8 +146,8 @@
 						<div class="col-sm-6 add-margin">
 							<form:select class="form-control" id="locale" path="locale">
 								<form:option value=""></form:option>
-								<form:option value="en_IN"><spring:message code="lbl.eng"/></form:option>
-								<form:option value="hi_IN"><spring:message code="lbl.hindi"/></form:option>
+								<form:option value="en_ZM"><spring:message code="lbl.eng"/></form:option>
+								<!-- <form:option value="hi_IN"><spring:message code="lbl.hindi"/></form:option> -->
 							</form:select>
 						</div>
 					</div>
