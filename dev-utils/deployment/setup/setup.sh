@@ -75,7 +75,17 @@ psql \
     --echo-all \
     --set AUTOCOMMIT=on \
     --set ON_ERROR_STOP=on \
+    --set TSUFF=$TSUFF \
+    --set QTSTUFF=\'$TSUFF\' \   
     $DBNAME
+
+psql_exit_status = $?
+
+if [ $psql_exit_status != 0 ]; then
+    echo "psql failed while trying to run this sql script" 1>&2
+    exit $psql_exit_status
+fi
+
 
 echo "Script executed successfull on schema : "${array[0]}
 done <city_setup
