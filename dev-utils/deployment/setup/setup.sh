@@ -11,7 +11,7 @@ echo "
 ## IMP :- Make sure city_setup file is created and available at the current dir.       ##
 ##                                                                                     ##  
 ## Format for city_setup file :-                                                       ##
-## <schema_name>,<city_corp_name>,<city_domain_url>,<city_code>                        ##
+## <schema_name>,<city_name>,<local_name>, <city_domain_url>, <logo>, <city_code>      ##
 ##                                                                                     ##
 ## If you have city Bangalore, Mysore then entry should be :                           ##
 ##                                                                                     ##
@@ -67,9 +67,10 @@ psql \
     -p $DBHOSTPORT \
     -v schema=${array[0]} \
     -v cityname="'${array[1]}'" \
-    -v cityurl="'${array[2]}'" \
-    -v citylogo="'${array[3]}'" \
-    -v citycode="'${array[4]}'" \
+    -v citylocalname="'${array[2]}'" \
+    -v cityurl="'${array[3]}'" \
+    -v citylogo="'${array[4]}'" \
+    -v citycode="'${array[5]}'" \
     -f ${STARTUP_SCRIPT_NAME} \
     --echo-all \
     --set AUTOCOMMIT=on \
