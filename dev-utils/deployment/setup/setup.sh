@@ -41,9 +41,9 @@ read -p "Please enter the DB user name [default postgres] :  " db_username
 DBUSERNAME=${db_username:-postgres}
 
 REL_PATH=../../
-SCRIPT_PATH="/egov/egov-database/src/main/resources/setup/"
+SCRIPT_PATH="/egov/egov-database/src/main/resources/setup"
 cd $REL_PATH
-STARTUP_SCRIPT_NAME="$(dirname ${PWD}${SCRIPT_PATH})/setup/setup.sql"
+STARTUP_SCRIPT_NAME="$(dirname ${PWD}${SCRIPT_PATH})/setup.sql"
 cd deployment/setup
 echo "Executing ${STARTUP_SCRIPT_NAME} script"
 
