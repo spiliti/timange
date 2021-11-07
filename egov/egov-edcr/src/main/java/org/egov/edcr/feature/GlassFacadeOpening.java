@@ -45,52 +45,30 @@
  *  In case of any queries, you can reach eGovernments Foundation at contact@egovernments.org.
  */
 
-package org.egov.common.entity.edcr;
+package org.egov.edcr.feature;
 
-import java.math.BigDecimal;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import java.util.Date;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
-public class AccessoryBuilding extends Measurement {
+import org.egov.common.entity.edcr.Plan;
+import org.springframework.stereotype.Service;
 
-    private static final long serialVersionUID = 41L;
-
-    @Deprecated
-    private List<BigDecimal> distanceFromPlotBoundary = new ArrayList<>();
-    
-    private List<Measurement> units = new ArrayList<>();
-    
-    /*
-     * Key: Color code, Value: List of distances from accessory building to others like main building, road, plot boundary, etc...
-     * When key having value 0 means no color
-     * code used.
-     */
-    private Map<Integer, List<BigDecimal>> distances = Collections.emptyMap();
-
-    public List<BigDecimal> getDistanceFromPlotBoundary() {
-        return distanceFromPlotBoundary;
+@Service
+public class GlassFacadeOpening extends FeatureProcess {
+    @Override
+    public Plan validate(Plan plan) {
+        return plan;
     }
 
-    public void setDistanceFromPlotBoundary(List<BigDecimal> distanceFromPlotBoundary) {
-        this.distanceFromPlotBoundary = distanceFromPlotBoundary;
+    @Override
+    public Plan process(Plan plan) {
+        return plan;
     }
 
-    public List<Measurement> getUnits() {
-        return units;
+    @Override
+    public Map<String, Date> getAmendments() {
+        return new LinkedHashMap<>();
     }
 
-    public void setUnits(List<Measurement> units) {
-        this.units = units;
-    }
-
-    public Map<Integer, List<BigDecimal>> getDistances() {
-        return distances;
-    }
-
-    public void setDistances(Map<Integer, List<BigDecimal>> distances) {
-        this.distances = distances;
-    }
-    
 }

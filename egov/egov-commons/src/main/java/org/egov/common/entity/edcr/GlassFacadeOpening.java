@@ -48,49 +48,50 @@
 package org.egov.common.entity.edcr;
 
 import java.math.BigDecimal;
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
-import java.util.Map;
 
-public class AccessoryBuilding extends Measurement {
+public class GlassFacadeOpening {
 
-    private static final long serialVersionUID = 41L;
+    private static final long serialVersionUID = 102L;
 
-    @Deprecated
-    private List<BigDecimal> distanceFromPlotBoundary = new ArrayList<>();
-    
-    private List<Measurement> units = new ArrayList<>();
-    
-    /*
-     * Key: Color code, Value: List of distances from accessory building to others like main building, road, plot boundary, etc...
-     * When key having value 0 means no color
-     * code used.
-     */
-    private Map<Integer, List<BigDecimal>> distances = Collections.emptyMap();
+    private Integer number;
 
-    public List<BigDecimal> getDistanceFromPlotBoundary() {
-        return distanceFromPlotBoundary;
+    private List<BigDecimal> widths;
+
+    private List<BigDecimal> heights;
+
+    private List<BigDecimal> floorToGlassOpeningHeights;
+
+    public Integer getNumber() {
+        return number;
     }
 
-    public void setDistanceFromPlotBoundary(List<BigDecimal> distanceFromPlotBoundary) {
-        this.distanceFromPlotBoundary = distanceFromPlotBoundary;
+    public void setNumber(Integer number) {
+        this.number = number;
     }
 
-    public List<Measurement> getUnits() {
-        return units;
+    public List<BigDecimal> getWidths() {
+        return widths;
     }
 
-    public void setUnits(List<Measurement> units) {
-        this.units = units;
+    public void setWidths(List<BigDecimal> widths) {
+        this.widths = widths;
     }
 
-    public Map<Integer, List<BigDecimal>> getDistances() {
-        return distances;
+    public List<BigDecimal> getHeights() {
+        return heights;
     }
 
-    public void setDistances(Map<Integer, List<BigDecimal>> distances) {
-        this.distances = distances;
+    public void setHeights(List<BigDecimal> heights) {
+        this.heights = heights;
     }
-    
+
+    public List<BigDecimal> getFloorToGlassOpeningHeights() {
+        return floorToGlassOpeningHeights;
+    }
+
+    public void setFloorToGlassOpeningHeights(List<BigDecimal> floorToGlassOpeningHeights) {
+        this.floorToGlassOpeningHeights = floorToGlassOpeningHeights;
+    }
+
 }

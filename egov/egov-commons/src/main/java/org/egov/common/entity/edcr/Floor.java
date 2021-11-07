@@ -99,6 +99,10 @@ public class Floor extends Measurement {
     
     private List<Measurement> constructedAreas = new ArrayList<>();
     
+    private List<GlassFacadeOpening> glassFacadeOpenings = new ArrayList<>();
+    // Doors for version BPA-3.0.2-SNAPSHOT
+    private List<Door> doors = new ArrayList<>();
+    
     public List<FireStair> getFireStairs() {
         return fireStairs;
     }
@@ -579,5 +583,21 @@ public class Floor extends Measurement {
     public void setConstructedAreas(List<Measurement> constructedAreas) {
         this.constructedAreas = constructedAreas;
     }
+
+    public List<GlassFacadeOpening> getGlassFacadeOpenings() {
+        return glassFacadeOpenings;
+    }
+
+    public void setGlassFacadeOpenings(List<GlassFacadeOpening> glassFacadeOpenings) {
+        this.glassFacadeOpenings = glassFacadeOpenings;
+    }
+
+	public List<Door> getDoors() {
+		return doors;
+	}
+
+	public void setDoors(List<Door> doors) {
+		this.doors = doors;
+	}
 
 }

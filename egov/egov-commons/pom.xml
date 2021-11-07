@@ -41,7 +41,8 @@
 
 	<name>e-governments commons</name>
 	<artifactId>egov-commons</artifactId>
-
+	<version>BPA-3.0.2-SNAPSHOT</version>
+	
 	<dependencies>
 		<dependency>
 			<groupId>org.egov</groupId>
