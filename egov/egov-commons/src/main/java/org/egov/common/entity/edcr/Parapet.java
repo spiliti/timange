@@ -47,50 +47,31 @@
 
 package org.egov.common.entity.edcr;
 
-import java.math.BigDecimal;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
-import java.util.Map;
 
-public class AccessoryBuilding extends Measurement {
+public class Parapet {
 
-    private static final long serialVersionUID = 41L;
+    private static final long serialVersionUID = 103L;
 
-    @Deprecated
-    private List<BigDecimal> distanceFromPlotBoundary = new ArrayList<>();
-    
-    private List<Measurement> units = new ArrayList<>();
-    
-    /*
-     * Key: Color code, Value: List of distances from accessory building to others like main building, road, plot boundary, etc...
-     * When key having value 0 means no color
-     * code used.
-     */
-    private Map<Integer, List<BigDecimal>> distances = Collections.emptyMap();
+    private List<Measurement> heights = new ArrayList<>();
 
-    public List<BigDecimal> getDistanceFromPlotBoundary() {
-        return distanceFromPlotBoundary;
+    private List<Measurement> areas = new ArrayList<>();
+
+    public List<Measurement> getHeights() {
+        return heights;
     }
 
-    public void setDistanceFromPlotBoundary(List<BigDecimal> distanceFromPlotBoundary) {
-        this.distanceFromPlotBoundary = distanceFromPlotBoundary;
+    public void setHeights(List<Measurement> heights) {
+        this.heights = heights;
     }
 
-    public List<Measurement> getUnits() {
-        return units;
+    public List<Measurement> getAreas() {
+        return areas;
     }
 
-    public void setUnits(List<Measurement> units) {
-        this.units = units;
+    public void setAreas(List<Measurement> areas) {
+        this.areas = areas;
     }
 
-    public Map<Integer, List<BigDecimal>> getDistances() {
-        return distances;
-    }
-
-    public void setDistances(Map<Integer, List<BigDecimal>> distances) {
-        this.distances = distances;
-    }
-    
 }

@@ -44,53 +44,44 @@
  *
  *  In case of any queries, you can reach eGovernments Foundation at contact@egovernments.org.
  */
-
 package org.egov.common.entity.edcr;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
-import java.util.Map;
 
-public class AccessoryBuilding extends Measurement {
-
-    private static final long serialVersionUID = 41L;
-
-    @Deprecated
-    private List<BigDecimal> distanceFromPlotBoundary = new ArrayList<>();
+public class Door {
+	
+private static final long serialVersionUID = 105L;
     
-    private List<Measurement> units = new ArrayList<>();
+    private String name;
     
-    /*
-     * Key: Color code, Value: List of distances from accessory building to others like main building, road, plot boundary, etc...
-     * When key having value 0 means no color
-     * code used.
-     */
-    private Map<Integer, List<BigDecimal>> distances = Collections.emptyMap();
-
-    public List<BigDecimal> getDistanceFromPlotBoundary() {
-        return distanceFromPlotBoundary;
-    }
-
-    public void setDistanceFromPlotBoundary(List<BigDecimal> distanceFromPlotBoundary) {
-        this.distanceFromPlotBoundary = distanceFromPlotBoundary;
-    }
-
-    public List<Measurement> getUnits() {
-        return units;
-    }
-
-    public void setUnits(List<Measurement> units) {
-        this.units = units;
-    }
-
-    public Map<Integer, List<BigDecimal>> getDistances() {
-        return distances;
-    }
-
-    public void setDistances(Map<Integer, List<BigDecimal>> distances) {
-        this.distances = distances;
-    }
+    private List<BigDecimal> widths = new ArrayList<>();
     
+    private int colorCode;
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public List<BigDecimal> getWidths() {
+		return widths;
+	}
+
+	public void setWidths(List<BigDecimal> widths) {
+		this.widths = widths;
+	}
+
+	public int getColorCode() {
+		return colorCode;
+	}
+
+	public void setColorCode(int colorCode) {
+		this.colorCode = colorCode;
+	}
+
 }

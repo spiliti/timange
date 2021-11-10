@@ -166,6 +166,8 @@ public class Plan implements Serializable {
     private DistanceToExternalEntity distanceToExternalEntity = new DistanceToExternalEntity();
     // Plot all sides compound wall and their railing heights
     private CompoundWall compoundWall;
+    // Roads reserved by government for road widening purpose
+    private transient List<Road> roadReserves = new ArrayList<>();
 
     @Transient
     @JsonIgnore
@@ -195,7 +197,8 @@ public class Plan implements Serializable {
     private HashMap<String, String> featureAmendments = new LinkedHashMap<>();
     private transient Map<String, List<Object>> mdmsMasterData;
     private transient Boolean mainDcrPassed = false;
-    
+    private List<ICT> icts = new ArrayList<>(); 
+
     public List<BigDecimal> getCanopyDistanceFromPlotBoundary() {
         return canopyDistanceFromPlotBoundary;
     }
@@ -229,7 +232,7 @@ public class Plan implements Serializable {
     public void setAccessoryBlocks(List<AccessoryBlock> accessoryBlocks) {
         this.accessoryBlocks = accessoryBlocks;
     }
-    
+
     public List<BigDecimal> getAccessoryBlockDistances() {
         return accessoryBlockDistances;
     }
@@ -616,6 +619,22 @@ public class Plan implements Serializable {
 
     public void setMainDcrPassed(Boolean mainDcrPassed) {
         this.mainDcrPassed = mainDcrPassed;
+    }
+
+    public List<Road> getRoadReserves() {
+        return roadReserves;
+    }
+
+    public void setRoadReserves(List<Road> roadReserves) {
+        this.roadReserves = roadReserves;
+    }
+
+    public List<ICT> getIcts() {
+        return icts;
+    }
+
+    public void setIcts(List<ICT> icts) {
+        this.icts = icts;
     }
 
 }

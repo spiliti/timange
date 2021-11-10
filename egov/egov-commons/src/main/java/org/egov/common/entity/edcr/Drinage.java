@@ -47,50 +47,44 @@
 
 package org.egov.common.entity.edcr;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
-public class AccessoryBuilding extends Measurement {
-
-    private static final long serialVersionUID = 41L;
-
-    @Deprecated
-    private List<BigDecimal> distanceFromPlotBoundary = new ArrayList<>();
+/**
+ * @author vinoth
+ *
+ */
+public class Drinage implements Serializable {
     
-    private List<Measurement> units = new ArrayList<>();
-    
+    private static final long serialVersionUID = 101L;
+
+    private List<Measurement> drinages = new ArrayList<>();
+
     /*
-     * Key: Color code, Value: List of distances from accessory building to others like main building, road, plot boundary, etc...
-     * When key having value 0 means no color
+     * Key: Color code, Value: List of distances from building to drainage. When key having value 0 means no color
      * code used.
      */
-    private Map<Integer, List<BigDecimal>> distances = Collections.emptyMap();
+    private Map<Integer, List<BigDecimal>> distancesFromBuilding = Collections.emptyMap();
 
-    public List<BigDecimal> getDistanceFromPlotBoundary() {
-        return distanceFromPlotBoundary;
+    public List<Measurement> getDrinages() {
+        return drinages;
     }
 
-    public void setDistanceFromPlotBoundary(List<BigDecimal> distanceFromPlotBoundary) {
-        this.distanceFromPlotBoundary = distanceFromPlotBoundary;
+    public void setDrinages(List<Measurement> drinages) {
+        this.drinages = drinages;
     }
 
-    public List<Measurement> getUnits() {
-        return units;
+    public Map<Integer, List<BigDecimal>> getDistancesFromBuilding() {
+        return distancesFromBuilding;
     }
 
-    public void setUnits(List<Measurement> units) {
-        this.units = units;
+    public void setDistancesFromBuilding(Map<Integer, List<BigDecimal>> distancesFromBuilding) {
+        this.distancesFromBuilding = distancesFromBuilding;
     }
-
-    public Map<Integer, List<BigDecimal>> getDistances() {
-        return distances;
-    }
-
-    public void setDistances(Map<Integer, List<BigDecimal>> distances) {
-        this.distances = distances;
-    }
+    
     
 }

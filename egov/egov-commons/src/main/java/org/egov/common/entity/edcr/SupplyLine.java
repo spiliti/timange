@@ -1,5 +1,6 @@
 /*
- * eGov  SmartCity eGovernance suite aims to improve the internal efficiency,transparency,
+ * eGov  SmartCity eGovernance suite aims to improve the internal efficiency,transparency
+,
  * accountability and the service delivery of the government  organizations.
  *
  *  Copyright (C) <2019>  eGovernments Foundation
@@ -47,42 +48,33 @@
 
 package org.egov.common.entity.edcr;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
-public class AccessoryBuilding extends Measurement {
+/**
+ * @author vinoth
+ *
+ */
+public class SupplyLine implements Serializable {
 
-    private static final long serialVersionUID = 41L;
+    private static final long serialVersionUID = 90L;
 
-    @Deprecated
-    private List<BigDecimal> distanceFromPlotBoundary = new ArrayList<>();
-    
-    private List<Measurement> units = new ArrayList<>();
-    
-    /*
-     * Key: Color code, Value: List of distances from accessory building to others like main building, road, plot boundary, etc...
-     * When key having value 0 means no color
-     * code used.
-     */
+    // List of all supply lines
+    private List<Measurement> supplyLines = new ArrayList<>();
+
+    // Key: Color code, Value: List of dimensions like distances, length
     private Map<Integer, List<BigDecimal>> distances = Collections.emptyMap();
 
-    public List<BigDecimal> getDistanceFromPlotBoundary() {
-        return distanceFromPlotBoundary;
+    public List<Measurement> getSupplyLines() {
+        return supplyLines;
     }
 
-    public void setDistanceFromPlotBoundary(List<BigDecimal> distanceFromPlotBoundary) {
-        this.distanceFromPlotBoundary = distanceFromPlotBoundary;
-    }
-
-    public List<Measurement> getUnits() {
-        return units;
-    }
-
-    public void setUnits(List<Measurement> units) {
-        this.units = units;
+    public void setSupplyLines(List<Measurement> supplyLines) {
+        this.supplyLines = supplyLines;
     }
 
     public Map<Integer, List<BigDecimal>> getDistances() {
@@ -92,5 +84,5 @@ public class AccessoryBuilding extends Measurement {
     public void setDistances(Map<Integer, List<BigDecimal>> distances) {
         this.distances = distances;
     }
-    
+
 }

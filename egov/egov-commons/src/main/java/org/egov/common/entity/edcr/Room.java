@@ -54,9 +54,16 @@ public class Room {
 
     private static final long serialVersionUID = 28L;
 
+    private String number;
+
     private List<RoomHeight> heightOfRooms = new ArrayList<>();
+    private Boolean closed = false;
 
     private List<Measurement> rooms = new ArrayList<>();
+
+    private MeasurementWithHeight lightAndVentilation = new MeasurementWithHeight();
+
+    private List<Occupancy> mezzanineAreas = new ArrayList<>();
 
     public List<RoomHeight> getHeights() {
         return heightOfRooms;
@@ -66,12 +73,62 @@ public class Room {
         this.heightOfRooms = heights;
     }
 
+    /**
+     * @return the closed
+     */
+    public Boolean getClosed() {
+        return closed;
+    }
+
+    /**
+     * @param closed the closed to set
+     */
+    public void setClosed(Boolean closed) {
+        this.closed = closed;
+    }
+
+    /**
+     * @return the number
+     */
+    public String getNumber() {
+        return number;
+    }
+
+    /**
+     * @param number the number to set
+     */
+    public void setNumber(String number) {
+        this.number = number;
+    }
+
+    /**
+     * @return the lightAndVentilation
+     */
+    public MeasurementWithHeight getLightAndVentilation() {
+        return lightAndVentilation;
+    }
+
+    /**
+     * @param lightAndVentilation the lightAndVentilation to set
+     */
+    public void setLightAndVentilation(MeasurementWithHeight lightAndVentilation) {
+        this.lightAndVentilation = lightAndVentilation;
+    }
+
     public List<Measurement> getRooms() {
         return rooms;
     }
 
     public void setRooms(List<Measurement> rooms) {
         this.rooms = rooms;
+    }
+
+    public List<Occupancy> getMezzanineAreas() {
+        return mezzanineAreas;
+    }
+
+    public void setMezzanineAreas(List<Occupancy> mezzanineAreas) {
+        this.mezzanineAreas = mezzanineAreas;
     }
 
 }

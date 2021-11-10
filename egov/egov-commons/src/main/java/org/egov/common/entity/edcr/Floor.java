@@ -80,8 +80,8 @@ public class Floor extends Measurement {
     private List<SpiralStair> spiralStairs = new ArrayList<>();
     private ParkingDetails parking = new ParkingDetails();
     private List<BigDecimal> floorHeights;
-    private Room acRoom;
-    private Room regularRoom;
+    private List<Room> acRooms=new ArrayList<>();
+    private List<Room>regularRooms=new ArrayList<>();
     private Room kitchen;
     private Room bathRoom;
     private Room waterClosets;
@@ -98,6 +98,10 @@ public class Floor extends Measurement {
     private List<Measurement> overHangs;
     
     private List<Measurement> constructedAreas = new ArrayList<>();
+    
+    private List<GlassFacadeOpening> glassFacadeOpenings = new ArrayList<>();
+    // Doors for version BPA-3.0.2-SNAPSHOT
+    private List<Door> doors = new ArrayList<>();
     
     public List<FireStair> getFireStairs() {
         return fireStairs;
@@ -232,7 +236,7 @@ public class Floor extends Measurement {
             occupancies.add(occupancy);
         } else {
             List<Occupancy> collect = occupancies.stream().filter(o -> o.getTypeHelper() != null
-                    && (o.getTypeHelper().getType().getCode()
+                    && (occupancy.getTypeHelper()!=null && o.getTypeHelper().getType()!=null && o.getTypeHelper().getType().getCode()
                             .equalsIgnoreCase(occupancy.getTypeHelper().getType().getCode())))
                     .collect(Collectors.toList());
             if (!collect.isEmpty()) {
@@ -418,24 +422,45 @@ public class Floor extends Measurement {
     public void setParking(ParkingDetails parking) {
         this.parking = parking;
     }
+    
 
-    public Room getAcRoom() {
-        return acRoom;
-    }
+    /**
+	 * @return the acRooms
+	 */
+	public List<Room> getAcRooms() {
+		return acRooms;
+	}
 
-    public void setAcRoom(Room acRoom) {
-        this.acRoom = acRoom;
-    }
+	public void addAcRoom(Room acRoom) {
+		this.acRooms.add(acRoom);
+	}
+	/**
+	 * @param acRooms the acRooms to set
+	 */
+	public void setAcRooms(List<Room> acRooms) {
+		this.acRooms = acRooms;
+	}
 
-    public Room getRegularRoom() {
-        return regularRoom;
-    }
+	/**
+	 * @return the regularRooms
+	 */
+	public List<Room> getRegularRooms() {
+		return regularRooms;
+	}
 
-    public void setRegularRoom(Room regularRoom) {
-        this.regularRoom = regularRoom;
-    }
+	public void addRegularRoom(Room regularRoom) {
+		this.regularRooms.add(regularRoom);
+	}
+	
 
-    public Room getKitchen() {
+	/**
+	 * @param regularRooms the regularRooms to set
+	 */
+	public void setRegularRooms(List<Room> regularRooms) {
+		this.regularRooms = regularRooms;
+	}
+
+	public Room getKitchen() {
         return kitchen;
     }
 
@@ -558,5 +583,21 @@ public class Floor extends Measurement {
     public void setConstructedAreas(List<Measurement> constructedAreas) {
         this.constructedAreas = constructedAreas;
     }
+
+    public List<GlassFacadeOpening> getGlassFacadeOpenings() {
+        return glassFacadeOpenings;
+    }
+
+    public void setGlassFacadeOpenings(List<GlassFacadeOpening> glassFacadeOpenings) {
+        this.glassFacadeOpenings = glassFacadeOpenings;
+    }
+
+	public List<Door> getDoors() {
+		return doors;
+	}
+
+	public void setDoors(List<Door> doors) {
+		this.doors = doors;
+	}
 
 }
