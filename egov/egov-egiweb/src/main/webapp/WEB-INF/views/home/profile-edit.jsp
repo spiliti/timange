@@ -120,7 +120,7 @@
 							<form:input path="dob" cssClass="form-control datepicker"  data-inputmask="'mask': 'd/m/y'" id="dob" placeholder="24/01/1992"/>
 						</div>
 					</div>
-					
+	<!-- 		Shuller 		
 					<div class="form-group">
 						
 						<label for="field-1" class="col-sm-3 control-label">
@@ -139,7 +139,7 @@
 							<form:errors path="pan" cssClass="add-margin error-msg"/>
 						</div>
 						
-					</div>
+					</div> -->
 					
 					<div class="form-group">
 						<label for="field-1" class="col-sm-3 control-label"><spring:message code="lbl.preferred.lang"/></label>
