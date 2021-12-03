@@ -234,7 +234,7 @@
 			</div>
 		</div>
 	</c:if>
-	<%-- <div class="row add-border">
+	<div class="row add-border">
 		<div class="col-sm-3 add-margin">
 			<spring:message code="lbl.coa.enrol.no" />
 		</div>
@@ -261,22 +261,22 @@
 		<div class="col-sm-3 add-margin view-content">
 			<c:out value="${stakeHolder.tinNumber}" default="NA"></c:out>
 		</div>
-	</div> --%>
-
+	</div> 
+<!-- edited by Shuller
 	<div class="row add-border">
 		<div class="col-sm-3 control-div add-margin">
 			<spring:message code="lbl.aadhar" />
 		</div>
 		<div class="col-sm-3 add-margin view-content">
 			<c:out value="${stakeHolder.showAadhaarNumber()}" default="N/A"></c:out>
-		</div>
+		</div> 
 		<div class="col-sm-3 add-margin">
 			<spring:message code="lbl.pan" />
 		</div>
 		<div class="col-sm-3 add-margin view-content">
 			<c:out value="${stakeHolder.showPanNumber()}" default="N/A"></c:out>
 		</div>
-	</div>
+	</div> -->
 	<div class="row add-border">
 		<div class="col-sm-3 control-div add-margin">
 			<spring:message code="lbl.if.addresssame" />

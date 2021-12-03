@@ -82,7 +82,7 @@
 						</div>
 					</c:if>
 				</div>
-
+<!-- edit by Shuller 
 				<div class="form-group">
 					<label class="col-sm-3 control-label text-right"><spring:message
 							code="lbl.aadhar" /></label>
@@ -99,7 +99,7 @@
 							id="panNumber" maxlength="10" />
 						<form:errors path="pan" cssClass="error-msg" />
 					</div>
-				</div>
+				</div> -->
 				
 				<div class="form-group">
 					<label class="col-sm-3 control-label text-right"><spring:message

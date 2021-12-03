@@ -244,8 +244,8 @@
 								    <c:if test="${not empty image}">
 								    <div class="form-group">
 									    <label for="field-1" class="col-sm-3 control-label"><spring:message code="lbl.sign"/></label>
-										<div class="col-md-3 col-xs-6 add-margin view-content">
-											<img width="100" height="70" src='data:image/png;base64,${image}' /> 
+											<div class="col-md-3 col-xs-6 add-margin view-content">
+												<img width="100" height="70" src='data:image/png;base64,${image}' /> 
 									  	</div>
 								    </div>
 								    <div class="form-group">

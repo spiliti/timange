@@ -94,12 +94,13 @@
 		<div class="col-sm-3 add-margin view-content">
 			<c:out value="${owner.gender}" default="N/A"></c:out>
 		</div>
+<!-- Aadhar edited by Shuller		
 		<div class="col-sm-3 add-margin">
 			<spring:message code="lbl.aadhar" />
 		</div>
 		<div class="col-sm-3 add-margin view-content">
 			<c:out value="${owner.showAadhaarNumber()}"
 				default="N/A"></c:out>
-		</div>
+		</div> -->
 	</div>
 </div>

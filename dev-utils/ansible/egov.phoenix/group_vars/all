@@ -24,7 +24,7 @@ postgresql_dbpasswd: phoenix
 
 
 #ELASTICSEARCH details
-elasticsearch_version: 2.4.1
+elasticsearch_version: 2.4.6
 elasticsearch_install_dir: "{{ANSIBLE_WORKSPACE}}"
 elasticsearch_home: "{{elasticsearch_install_dir}}/elasticsearch-{{elasticsearch_version}}"
 elasticsearch_download_url: 'https://devops.egovernments.org/downloads/es'
