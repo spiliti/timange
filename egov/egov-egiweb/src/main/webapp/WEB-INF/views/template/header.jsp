@@ -71,7 +71,7 @@
             <div class="nav-right-menu col-md-2 col-xs-2">
                 <ul class="hr-menu text-right">
                     <li class="ico-menu">
-                        <a href="http://www.egovtech.org" target="_blank">
+                        <a href="http://www.egovzm.org" target="_blank">
                             <img src="<cdn:url  value='/resources/global/images/digit-logo-black.png'/>" title="Customised by ITM Pamodzi"
  height="35px" style="opacity: 0.8">
                         </a>
