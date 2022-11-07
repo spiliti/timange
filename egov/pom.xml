@@ -123,11 +123,26 @@
 			<id>JBoss Repository</id>
 			<url>https://repository.jboss.org/nexus/content/groups/public/</url>
 		</repository>
-		<repository>
+<!--		<repository>
 			<id>JSPRESSO</id>
 			<url>http://repository.jspresso.org/maven2/</url>
-		</repository>
-	</repositories>
+		</repository> -->
+<!-- SHULLER'S ADDITION -->
+   	<repository>
+      		<id>central</id>
+      		<name>Central Repository</name>
+      		<url>http://repo.maven.apache.org/maven2</url>
+      		<layout>default</layout>
+      		<snapshots>
+        		<enabled>false</enabled>
+      		</snapshots>
+    	</repository>
+    	<repository>
+     		<id>javaxt.com</id>
+     		<url>http://www.javaxt.com/maven</url>
+   	    </repository>
+<!-- END OF SHULLER'S ADDITION -->		
+	</repositories> 
 
 	<pluginRepositories>
 		<pluginRepository>
@@ -230,7 +245,7 @@
 		<google.zxing.version>3.3.0</google.zxing.version>
 		<recaptcha.version>0.0.8</recaptcha.version>
 		<jcaptcha.version>2.0-alpha-1</jcaptcha.version>
-		<javaxt.core.version>1.7.8</javaxt.core.version>
+		<javaxt.core.version>1.12.0</javaxt.core.version>
 		<pdfbox.version>2.0.4</pdfbox.version>
 		<!-- Plugin dependency versions -->
 		<mvn.javadoc.plugin.version>2.10.4</mvn.javadoc.plugin.version>
