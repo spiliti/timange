@@ -141,7 +141,7 @@
 		</div>
 		<div class = "color-white footer-list-content col-md-4">
 			<div style = "margin-bottom: 16px;" class = "color-white bpa-common-header2 bpa-common-header">Help Resources</div>
-			<ul class="tutorial-list color-white">
+<!-- 			<ul class="tutorial-list color-white">
 				<li class="bpa-common-text tutorial-item">
 					<a href="/egi/resources/guide/assets/docs/Business Licensee User.pdf" target="_blank">Registered building licensee user manual</a>
 				</li>
@@ -166,7 +166,7 @@
 				<li class="bpa-common-text tutorial-item">
 					<a href="https://s3.ap-south-1.amazonaws.com/suvega/images/Single+family+residential+building.pdf" target="_blank">Single family residential building - Drawing Guidelines</a>
 				</li> 
-			</ul>
+			</ul> -->
 		</div>
 		
 		<div class = "footer-list-content col-md-4">
